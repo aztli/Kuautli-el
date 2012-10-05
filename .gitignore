@@ -1,0 +1,8 @@
+# evitar archivos de respaldo
+
+\#*
+*~
+
+# evitar archivos de compilacion de lisp
+
+*.elc
