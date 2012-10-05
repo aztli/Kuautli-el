@@ -2,8 +2,8 @@
 
 ##Motivación##
 
-Prover a los usuarios de aztli un editor personalizado, evitando que el usuario
-tengo un desconsertante y fallido encuentro con uno de los mejores entornos para
+Proveer a los usuarios de Aztli un editor personalizado, evitando que el usuario
+se halle en un desconsertante y fallido encuentro con uno de los mejores entornos para
 el desarrollo.
 
 ##Instalación##
