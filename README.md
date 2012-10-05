@@ -10,8 +10,8 @@ el desarrollo.
 
 En primer lugar, obten el repositorio con:
 
-```shell
-git clone https://github.com/Aztli-Chia/Kuautli-el.git ~/Kuautli-el
+```console
+git clone --recursive https://github.com/Aztli-Chia/Kuautli-el.git ~/Kuautli-el
 ```
 
 * Puedes substituir '~/Kuautli-el' con un directorio de tu elección.
