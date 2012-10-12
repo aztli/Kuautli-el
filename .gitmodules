@@ -1,3 +1,6 @@
 [submodule "popwin-el"]
 	path = popwin-el
 	url = https://github.com/m2ym/popwin-el.git
+[submodule "autopair"]
+	path = autopair
+	url = https://github.com/capitaomorte/autopair.git

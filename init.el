@@ -34,10 +34,12 @@ paquete kuautli-el")
 (setq indent-tabs-mode nil) ;; Desactiva el tabulador
 (setq tab-width 4) ;; Establece que cuando se presione TAB se avanzara 4 espacios
 
-(add-to-list 'load-path (concat Kuautli-el-home "/popwin-el"))
-(require 'popwin) 
-(setq display-buffer-function 
-      'popwin:display-buffer) ;; modo que permite la creacion de ventanas 
-                              ;; para mensajes emergentes
-
-
+(let ((default-directory Kuautli-el-home))
+  (normal-top-level-add-subdirs-to-load-path)
+  (require 'popwin) 
+  (setq display-buffer-function 
+	'popwin:display-buffer) ;; modo que permite la creacion de ventanas 
+                                ;; para mensajes emergentes
+  (require 'autopair)
+  (autopair-global-mode)
+)
