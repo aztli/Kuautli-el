@@ -4,3 +4,9 @@
 [submodule "autopair"]
 	path = autopair
 	url = https://github.com/capitaomorte/autopair.git
+[submodule "yasnippet"]
+	path = yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git
+[submodule "Fill-Column-Indicator"]
+	path = Fill-Column-Indicator
+	url = https://github.com/alpaker/Fill-Column-Indicator.git

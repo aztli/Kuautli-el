@@ -12,7 +12,11 @@ paquete kuautli-el")
 (custom-set-faces
  '(whitespace-hspace ((t (:foreground "darkgray"))))
  '(whitespace-space ((t (:foreground "darkgray"))))
- '(whitespace-tab ((t (:foreground "darkgray"))))) 
+ '(whitespace-tab ((t (:foreground "darkgray")))))
+(custom-set-variables
+ ;; Propiedades de fill-column-indicator
+ '(fci-rule-color "#555555")
+ '(fci-rule-width 4))
 
 
 ;; Cambia el acceso para clasico modo de buffer por ibuffer 
@@ -34,12 +38,32 @@ paquete kuautli-el")
 (setq indent-tabs-mode nil) ;; Desactiva el tabulador
 (setq tab-width 4) ;; Establece que cuando se presione TAB se avanzara 4 espacios
 
+
+;; Combinación de teclas que ayuda a visualizar el contenido
+;; del kill-ring
+(global-set-key (kbd "C-c y") '(lambda ()
+				"Muestra el kill-ring" 
+				(interactive) 
+				(popup-menu 'yank-menu)))
+
 (let ((default-directory Kuautli-el-home))
   (normal-top-level-add-subdirs-to-load-path)
+  
+  ;; Configuraciones popwin
   (require 'popwin) 
-  (setq display-buffer-function 
-	'popwin:display-buffer) ;; modo que permite la creacion de ventanas 
-                                ;; para mensajes emergentes
+  (setq display-buffer-function ;; modo que permite la creacion de ventanas 
+	'popwin:display-buffer) ;; para mensajes emergentes
+                                
+
+  ;; Configuraciones autopair
   (require 'autopair)
   (autopair-global-mode)
+
+  ;; Configuraciones yasnippet
+  (require 'yasnippet)
+  (yas-global-mode 1)
+
+  ;; regla de 80 columnas
+  (require 'fill-column-indicator)
+  (setq-default fill-column 80)
 )
