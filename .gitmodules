@@ -10,3 +10,6 @@
 [submodule "Fill-Column-Indicator"]
 	path = Fill-Column-Indicator
 	url = https://github.com/alpaker/Fill-Column-Indicator.git
+[submodule "emacs-zlc"]
+	path = emacs-zlc
+	url = https://github.com/mooz/emacs-zlc
