@@ -1,3 +1,15 @@
 [submodule "popwin-el"]
 	path = popwin-el
 	url = https://github.com/m2ym/popwin-el.git
+[submodule "autopair"]
+	path = autopair
+	url = https://github.com/capitaomorte/autopair.git
+[submodule "yasnippet"]
+	path = yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git
+[submodule "Fill-Column-Indicator"]
+	path = Fill-Column-Indicator
+	url = https://github.com/alpaker/Fill-Column-Indicator.git
+[submodule "emacs-zlc"]
+	path = emacs-zlc
+	url = https://github.com/mooz/emacs-zlc
